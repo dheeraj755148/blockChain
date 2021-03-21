@@ -1,0 +1,81 @@
+body {
+  background-color: black !important;
+}
+.verify-heading {
+  height: 50vh;
+  background-image: url("../image/header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.verify-heading .main-heading-context .main-heading-title {
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 300%;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 10%;
+  letter-spacing: 0.07em;
+}
+
+.verify-heading .main-heading-context .main-heading-tagline {
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 150%;
+  line-height: 45px;
+  text-align: center;
+  color: #fdb827;
+  letter-spacing: 0.03em;
+}
+
+.verify-heading .login-box {
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 2%;
+  background: #242424;
+  border-radius: 20px;
+}
+
+.verify-heading .login-box form {
+  padding: 5% 10%;
+}
+
+.verify-heading .login-box form label {
+  font-family: "Titillium Web", sans-serif;
+  display: block;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 110%;
+  line-height: 150%;
+  color: #f8f6f0;
+}
+
+.verify-heading .login-box form input {
+  text-align: center;
+}
+
+.verify-heading .login-box form button {
+  width: 30%;
+  margin: 0 auto;
+  display: block;
+  background: #fdb827;
+  border: none;
+  color: black;
+}
+
+.verify-heading .login-box form button:hover {
+  background: #d6a130;
+  color: white;
+}
+.verify-heading .login-box form input {
+  margin-top: 20px;
+}
+.verify-heading .login-box form button {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=verify.css.map */

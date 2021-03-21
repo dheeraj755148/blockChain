@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Block-Chain Voting</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  </link>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,700;1,400&family=Titillium+Web&display=swap"
+    rel="stylesheet" />
+
+</head>
+
+<body>
+  <div class="vote-heading">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12 main-heading-context">
+          <p class="main-heading-title">IF THEY CAN SO CAN YOU</p>
+          <p class="main-heading-tagline">
+            Voting Makes Your Country Stronger
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="login-box">
+      <div class="container">
+        <p class="vote-title">CHOOSE YOUR CANDIDATE</p>
+        <div id="content" style="display: none;">
+          <div class="row">
+
+            <div class="col-lg-8 table-update">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Candidate Name</th>
+                    <th scope="col">Vote Count</th>
+                  </tr>
+                </thead>
+                <tbody id="candidatesResults">
+                </tbody>
+              </table>
+            </div>  
+            <div class="col-lg-4">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Symbol</th>
+                  </tr>
+                </thead>
+                <tr>
+                  <td><img src="./image/aot.png" alt=""></td>
+                </tr>
+                <tr>
+                  <td><img src="./image/rose.jpg" alt=""></td>
+                </tr>
+                <tr>
+                  <td><img src="./image/sharingan.png" alt=""></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <hr />
+          <form onSubmit="App.castVote(); return false;">
+            <div class="form-group">
+              <label for="candidatesSelect">Select Candidate</label>
+              <select class="form-control" id="candidatesSelect">
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Vote</button>
+            <div id="note">Please note that vote once recorded cannot be changed!</div>
+            <hr />
+          </form>
+          <div id="voteStatus" style="display: none;">Your vote has been recorded.</div>
+          <div id="accountAddress" class="text-center"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

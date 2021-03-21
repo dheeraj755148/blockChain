@@ -1,0 +1,341 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  /* border-radius: 10px; */
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+#content {
+  padding: 25px 25px;
+}
+
+th {
+  font-weight: bold;
+  color: #60a9ff;
+}
+
+tr {
+  border: 1px solid;
+  border: 1px solid rgb(163, 163, 167);
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+button {
+  margin: 15px;
+  width: 10rem;
+}
+
+label {
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-top: 25px;
+}
+
+.text-end {
+  text-align: end;
+  font-weight: 500;
+  color: crimson;
+  text-transform: none;
+}
+
+#tag {
+  color: darkorange;
+}
+
+#voteStatus {
+  padding: 3rem;
+  text-transform: none;
+  background-color: #dff3e3;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  text-decoration: rgb(4, 247, 166);
+  color: darkgreen;
+}
+
+#myAccount {
+  padding-top: 1rem;
+  color: dimgray;
+}
+
+#accountTag {
+  font-weight: bold;
+  font-size: medium;
+}
+
+#note {
+  font-size: small;
+  color: red;
+  text-transform: none;
+}
+
+.vote-heading {
+  height: 50vh;
+  background-image: url("../image/header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.vote-heading .main-heading-context .main-heading-title {
+  font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 300%;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 10%;
+  letter-spacing: 0.07em;
+}
+
+.vote-heading .main-heading-context .main-heading-tagline {
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 150%;
+  line-height: 100%;
+  text-align: center;
+  color: #fdb827;
+  letter-spacing: 0.03em;
+  margin-top: -20px;
+  margin: auto;
+}
+
+.vote-heading .login-box {
+  width: 70vw;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 2%;
+  background: #242424;
+  border-radius: 20px;
+}
+
+.vote-heading .login-box .col {
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 3%;
+}
+
+.vote-heading .login-box .col img {
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.vote-heading .login-box .col img:hover {
+  border: none;
+  border: 1px solid white;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.vote-heading .login-box .vote-title {
+  font-family: "Titillium Web", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 170%;
+  line-height: 200%;
+  text-align: center;
+  color: #f8f6f0;
+  padding: 4px;
+}
+
+.vote-heading .login-box button {
+  width: 20%;
+  margin: 0 auto;
+  margin-top: 6%;
+  display: block;
+  background: #fdb827;
+  border: none;
+  color: black;
+  position: relative;
+  bottom: 20px;
+}
+
+.vote-heading .login-box button:hover {
+  background: #d6a130;
+  color: white;
+}
+.login-box td {
+  color: white;
+}
+#accountTag {
+  color: white;
+}
+label {
+  color: white;
+}
+.table tr {
+  height: 50px;
+}
+.table tr td img {
+  transition: all ease-out 0.25s;
+  width: 22px;
+}
+.table tr td img:hover {
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=vote.css.map */
