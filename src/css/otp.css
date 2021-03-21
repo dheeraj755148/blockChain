@@ -78,4 +78,8 @@ body {
 .verify-heading .login-box form button {
   margin-top: 20px;
 }
+.login-box form #recaptcha{
+  display: block;
+  margin-left: 100px;
+}
 /*# sourceMappingURL=verify.css.map */
